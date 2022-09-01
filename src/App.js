@@ -38,8 +38,8 @@ const App = () => {
           .then((res) => {
             let result = [];
             res.map((items) => {
-              items.data.map((item) => {
-                result.push(item);
+              return items.data.map((item) => {
+                return result.push(item);
               })
             })
             localStorage.setItem("charactersList", JSON.stringify(result));
