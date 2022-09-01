@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const HeaderContainer = styled.div`
+const HeaderWrapper = styled.div`
   width: 100%;
-  height: 10vh;
+  height: 25%;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -20,11 +20,11 @@ const Title = styled.h1`
 const Header = () => {
 
   return (
-    <HeaderContainer>
+    <HeaderWrapper>
       <Title>
         Rick & Morty
       </Title>
-    </HeaderContainer>
+    </HeaderWrapper>
   );
 }
 

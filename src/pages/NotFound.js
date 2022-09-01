@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const NotFoundContainer = styled.div`
+const NotFoundWrapper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -16,11 +16,11 @@ const Text404 = styled.h1`
 const NotFound = () => {
 
   return (
-    <NotFoundContainer>
+    <NotFoundWrapper>
       <Text404>
         Error 404
       </Text404>
-    </NotFoundContainer>
+    </NotFoundWrapper>
   );
 }
 
