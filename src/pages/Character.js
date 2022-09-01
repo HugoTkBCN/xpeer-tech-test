@@ -3,6 +3,7 @@ const Character = () => {
 
   return (
     <div>
+      character
     </div>
   );
 }
