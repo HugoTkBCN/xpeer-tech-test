@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const HeaderWrapper = styled.div`
   width: 100%;
@@ -18,10 +19,11 @@ const Title = styled.h1`
 `;
 
 const Header = () => {
+  const navigate = useNavigate();
 
   return (
     <HeaderWrapper>
-      <Title>
+      <Title onClick={() => navigate("/")}>
         Rick & Morty
       </Title>
     </HeaderWrapper>
